@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Fodásticas - Lazer</title>
+    {% if tema == 'escuro' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+{% endif %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Notícias Fodásticas</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <form action="/" method="get">
+                            <button type="submit">Home</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="esportes" method="get">
+                            <button type="submit">Esportes</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="entretenimento" method="get">
+                            <button type="submit">Entretenimento</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="lazer" method="get">
+                            <button type="submit">Lazer</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="news-container">
+            <article class="news-item">
+                <h2>Destinos para Viajar em 2025</h2>
+                <p class="summary">Confira os lugares mais procurados por turistas e descubra as tendências de viagem para este ano.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>Os Melhores Parques de Diversões do Mundo</h2>
+                <p class="summary">Viaje para os parques de diversões mais emocionantes e descubra o que eles têm a oferecer para os aventureiros de todas as idades.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>Roteiros de Aventura para 2025</h2>
+                <p class="summary">Explore atividades de aventura, desde trilhas a esportes radicais, para quem busca emoção nas viagens deste ano.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias Fodásticas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

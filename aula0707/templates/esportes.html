@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Fodásticas - Esportes</title>
+    {% if tema == 'escuro' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    {% endif %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Notícias Fodásticas</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <form action="/" method="get">
+                            <button type="submit">Home</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="esportes" method="get">
+                            <button type="submit">Esportes</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="entretenimento" method="get">
+                            <button type="submit">Entretenimento</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="lazer" method="get">
+                            <button type="submit">Lazer</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="news-container">
+            <article class="news-item">
+                <h2>Brasil Rumo à Copa 2026</h2>
+                <p class="summary">A seleção brasileira já está se preparando para a próxima Copa do Mundo. O que esperar da equipe?</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>Fórmula 1: Novos Desafios para 2025</h2>
+                <p class="summary">Com mudanças no regulamento, 2025 promete ser um ano cheio de emoções nas pistas. Veja o que está por vir.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>O Crescimento do Futebol Feminino no Brasil</h2>
+                <p class="summary">Com mais investimentos e visibilidade, o futebol feminino está conquistando seu espaço no país. Confira a evolução.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias Fodásticas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Fodásticas - Home</title>
+    {% if tema == 'escuro' %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% else %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    {% endif %}
+</head>
+  guilherme bunda gulosa jebhu bybnda gykjusa guilerme senta gostoso[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]<body>
+    <header>
+        <div class="container">
+            <h1>Notícias Fodásticas {{ tema }} </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <form action="/" method="get">
+                            <button type="submit">Home</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="esportes" method="get">
+                            <button type="submit">Esportes</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="entretenimento" method="get">
+                            <button type="submit">Entretenimento</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="lazer" method="get">
+                            <button type="submit">Lazer</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Olá, {{ user }} fodão</h1>
+        </div>
+        <DIV CLASS="TEMA">
+            <form action="/" method="post">
+                <h1>CUAL TEMA VOCE QUER????</h1>
+                <button type="submit" name="escuro" value="escuro">Escuro</button>
+                <button type="submit" name="claro" value="claro">Claro</button>
+            </form>
+        </DIV>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias Fodásticas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Fodásticas - Entretenimento</title>
+    {% if tema == 'escuro' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+{% endif %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Notícias Fodásticas</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <form action="/" method="get">
+                            <button type="submit">Home</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="esportes" method="get">
+                            <button type="submit">Esportes</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="entretenimento" method="get">
+                            <button type="submit">Entretenimento</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="lazer" method="get">
+                            <button type="submit">Lazer</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="news-container">
+            <article class="news-item">
+                <h2>Nova Temporada de Stranger Things Chega à Netflix</h2>
+                <p class="summary">Os fãs da série aguardam ansiosos pela próxima temporada, que promete muitos mistérios e revelações.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>Oscar 2025: Os Filmes que Podem Surpreender</h2>
+                <p class="summary">Com a temporada de premiações se aproximando, alguns filmes estão sendo apontados como fortes candidatos ao Oscar.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+
+            <article class="news-item">
+                <h2>As Melhores Séries para Maratonar em 2025</h2>
+                <p class="summary">Preparamos uma lista com as séries mais emocionantes que você não pode deixar de assistir neste ano.</p>
+                <a href="#" class="read-more">Leia mais...</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Notícias Fodásticas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
