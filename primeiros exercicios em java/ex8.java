@@ -1,0 +1,1 @@
+//int é para numeros inteiros enquanto doubles para numeros decimais e em calculos de int caso o resultado seja double sera exibido como int

@@ -1,0 +1,1 @@
+//o static é importante para utilizar a classe/objeton em outtos lugares

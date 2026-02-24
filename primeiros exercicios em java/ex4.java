@@ -1,0 +1,1 @@
+// ele ta mudando um valor imutavel né é double
